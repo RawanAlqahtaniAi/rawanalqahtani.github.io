@@ -3,19 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animated Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>3D Portfolio</title>
+    <style>
+        body { margin: 0; overflow: hidden; }
+        header { text-align: center; padding: 20px; background: #333; color: white; }
+        section { padding: 20px; }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Animated Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Welcome to My 3D Portfolio</h1>
     </header>
     <section id="about">
         <h2>About Me</h2>
@@ -29,15 +26,7 @@
         <h2>Contact</h2>
         <p>How to get in touch with you.</p>
     </section>
-    <div class="animation">
-        <div class="shape shape1"></div>
-        <div class="shape shape2"></div>
-        <div class="shape shape3"></div>
-        <div class="shape shape4"></div>
-    </div>
-    <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
-    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
