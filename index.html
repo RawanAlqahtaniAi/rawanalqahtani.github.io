@@ -1,96 +1,43 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
-}
-
-header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 1em;
-    text-align: center;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 1em;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-section {
-    padding: 2em;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-}
-
-.animation {
-    position: relative;
-    height: 200px;
-    margin: 20px auto;
-    width: 100%;
-    overflow: hidden;
-}
-
-.shape {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    opacity: 0.7;
-    animation: float 5s infinite;
-}
-
-.shape1 {
-    background-color: red;
-    top: 0;
-    left: 0;
-    animation-delay: 0s;
-}
-
-.shape2 {
-    background-color: blue;
-    top: 50px;
-    left: 50px;
-    animation-delay: 1s;
-}
-
-.shape3 {
-    background-color: green;
-    top: 100px;
-    left: 100px;
-    animation-delay: 2s;
-}
-
-.shape4 {
-    background-color: yellow;
-    top: 150px;
-    left: 150px;
-    animation-delay: 3s;
-}
-
-@keyframes float {
-    0% {
-        transform: translateY(0) rotate(0);
-    }
-    50% {
-        transform: translateY(-20px) rotate(45deg);
-    }
-    100% {
-        transform: translateY(0) rotate(90deg);
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Animated Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Introduction and background information about yourself.</p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Details about your projects.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>How to get in touch with you.</p>
+    </section>
+    <div class="animation">
+        <div class="shape shape1"></div>
+        <div class="shape shape2"></div>
+        <div class="shape shape3"></div>
+        <div class="shape shape4"></div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
